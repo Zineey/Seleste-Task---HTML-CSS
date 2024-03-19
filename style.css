@@ -83,6 +83,33 @@ header .container {
     margin-right: 15px;
 }
 
+.sub-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff; 
+    padding: 30px;
+    z-index: 1000; 
+    width: 10%;
+
+}
+
+.nav-item:hover .sub-menu {
+    display: block;
+}
+
+.sub-menu li {
+    list-style-type: none;
+}
+
+.sub-menu li a {
+    text-decoration: none;
+    color: #000; 
+}
+
+.sub-menu li a:hover {
+    color: #555; 
+}
+
 #hero .carousel-cell {
     width: 100%;
     height: 100vh;
@@ -119,7 +146,7 @@ header .container {
     font-family: 'Jost', sans-serif;
 }
 
-#hero .btn {
+#hero .btn-hero {
     color: #ffffff;
     text-decoration: none;
     border: 1px solid;
@@ -127,7 +154,7 @@ header .container {
     transition: all 0.3s ease;
 }
 
-#hero .btn:hover {
+#hero .btn-hero:hover {
     background-color: #0a5d5d;
     color: #ffffff;
     border-color: #0a5d5d;
@@ -555,21 +582,10 @@ header .container {
     align-items: center;
 }
 
-.middle-product-card:hover .btn {
-    display: inline-block; 
-}
-
-.middle-product-card:hover .product-card-description {
-    display: none; 
-}
-
 .middle-product-card:hover .middle-icon-container {
     display: flex; 
 }
 
-.middle-product-card:hover .ratings {
-    display: none;
-}
 
 .middle-product-card .middle-top-image {
     position: relative;
@@ -598,31 +614,6 @@ header .container {
 .middle-product-card .middle-top-image img {
     width: 100%;
     height: auto;
-}
-
-
-.product-card-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.btn {
-    background-color: #fff;
-    border: 1px solid #0a5d5d;
-    color: #0a5d5d;
-    padding: 5px 10px;
-    text-decoration: none;
-    margin-top: 10px;
-    width: 100%;
-    text-align: center;
-    display: none;
-}
-
-.btn:hover {
-    background-color: #0a5d5d;
-    color: #fff;
 }
 
 .middle-icon-container{
@@ -654,9 +645,69 @@ header .container {
     overflow: hidden;
 }
 
+.product-card {
+    position: relative;
+    width: 250px;
+    height: 400px; 
+    margin: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#our-products .product-card:hover .product-card-description {
+    display: block; 
+}
+
+#our-products .product-card:hover .icon-container {
+    display: flex; 
+}
+
+#our-products .product-card:hover .ratings {
+    display: block;
+}
+
+.product-card .top-image {
+    position: relative;
+}
+
+#our-products .product-card .top-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('Assets/123.webp'); 
+    background-size: cover; 
+    opacity: 0;
+    transition: opacity 0.5s; 
+}
+
+#our-products .product-card:hover .top-image::before {
+    opacity: 1; 
+}
+
+.product-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#testimonials{
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 50vh;
+}
+
 #testimonials .carousel-cell{
     display: none;
-    width: 25%;
+    width: 29%;
     margin-right: 10px;
     display: flex;
     align-items: center;
@@ -665,7 +716,7 @@ header .container {
     margin: 10px;
     padding: 30px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    border-radius: 10px;
+    /* border-radius: 10px; */
 }
 
 .carousel-left{
@@ -713,6 +764,193 @@ header .container {
     display: none;
   }
 
+#flash-deals {
+    margin-bottom: 20px;
+}
+
+.flash-carousel{
+    /* width: 100%; */
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+#flash-deals .flickity-page-dots{
+    display: none;
+}
+
+.flash-card {
+    /* display: flex; */
+    width: 400px;
+    margin: 5px;
+}
+
+
+.flash-card:hover .btn {
+    display: inline-block; 
+}
+
+
+.flash-card:hover .middle-icon-container {
+    display: flex; 
+}
+
+.flash-card .top-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.flash-card .top-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('Assets/cactus.webp');
+    background-size: cover; 
+    opacity: 0; 
+    transition: opacity 0.5s; 
+}
+
+.flash-card:hover .top-image::before {
+    opacity: 1;
+}
+
+.flash-card .top-image img {
+    width: 100%;
+    height: auto;
+}
+
+.flash-card:hover .icon-container {
+    display: flex; 
+}
+
+.flash-card .icon-container{
+    display: none;
+    position: absolute;
+    padding: 10px; 
+    flex-direction: column;
+    left: 80%;
+}
+
+.flash-time {
+    position: absolute;
+    bottom: 10%;
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    left: 6%;
+}
+.flash-time .box{
+    background-color: #ffff;
+    margin-right: 10px;
+    height: auto;
+    min-width: 60px;
+    padding: 10px;
+    text-align: center;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#flash-deals .flickity-prev-next-button.previous {
+    top: -7%;
+    left: 41%
+}
+
+#flash-deals .flickity-prev-next-button.next {
+    top: -7%;
+    right: 42%;
+}
+
+#news{
+    height: auto;
+    padding: 30px;
+}
+
+#news .flickity-page-dots{
+    display: none;
+}
+#news .flickity-prev-next-button{
+    background-color: transparent;
+}
+
+.news-carousel{
+    padding: 50px;
+    justify-content: center;
+}
+
+.news-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.news-left{
+    width: 40%;
+}
+
+.news-right{
+    width: 40%;
+    padding: 30px;
+}
+
+.news-left img{
+    width: 100%;
+    height: auto;
+}
+.news-right .date{
+    font-size: 15px;
+    color: #888;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+.news-right .author{
+    font-size: 15px;
+    color: #000;
+    margin-bottom: 20px;
+    margin-right: 20px;
+
+}
+
+.news-right .heading{
+    font-size: 40px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #000;
+}
+.news-right .heading:hover{
+    color: #0a5d5d;
+}
+
+.news-right p{
+    font-size: 15px;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+.news-right .btn-black{
+    background-color: transparent;
+    padding: 10px 20px;
+    border: 1px solid #000;
+    color: #000;
+    display: inline-block;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+.news-right .btn-black:hover{
+    border: 1px solid #0a5d5d;
+    background-color: #0a5d5d;
+    color: #fff;
+
+}
 
 
 @media screen and (max-width: 1000px) {
@@ -742,16 +980,35 @@ header .container {
     .products-middle{
         width: 100%;
     }
-    .carousel-cell{
+    #testimonials .carousel-cell{
         width: 100%;
     }
-    .carousel-right{
+    #testimonials .carousel-right{
         width: 50%;
     }
+    #flash-deals .flickity-prev-next-button.previous {
+        top: -5%;
+        left: 35%
+    }
+    
+    #flash-deals .flickity-prev-next-button.next {
+        top: -5%;
+        right: 35%;
+    }
+    .news-container{
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .news-left{
+        width: 100%;
+    }
+    
+    .news-right{
+        width: 100%;
+        padding: 30px;
+    }
 }
-
-
-
 @media screen and (max-width: 768px) {
     .navbar-nav {
         display: none;
@@ -805,5 +1062,54 @@ header .container {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    .flash-card {
+        width: 350px;
+        margin: 5px;
+    }
+    .flash-time {
+        position: absolute;
+        bottom: 10%;
+        width: 200px;
+        display: flex;
+        flex-direction: row;
+        left: 6%;
+    }
+    .flash-time .box{
+        background-color: #ffff;
+        margin-right: 10px;
+        height: auto;
+        min-width: 40px;
+        padding: 10px;
+        text-align: center;
+        color: #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #flash-deals .flickity-prev-next-button.previous {
+        top: -6%;
+        left: 30%
+    }
+    
+    #flash-deals .flickity-prev-next-button.next {
+        top: -6%;
+        right: 30%;
+    }
+
+    .news-container{
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .news-left{
+        width: 100%;
+    }
+    
+    .news-right{
+        width: 100%;
+        padding: 30px;
     }
 }
