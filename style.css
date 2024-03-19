@@ -949,9 +949,89 @@ header .container {
     border: 1px solid #0a5d5d;
     background-color: #0a5d5d;
     color: #fff;
+}
+
+#dotd{
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 5%;
+}
+.dotd-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    width: 90%;
+    background-color: #f5f5f5;
+}
+
+.dotd-left{
+    width: 40%;
+}
+.dotd-left img{
+    width: 100%;
+    height: auto;
 
 }
 
+.dotd-right{
+    width: 40%;
+    padding: 30px;
+}
+.dotd-right h1{
+    font-size: 50px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #000;
+}
+
+.dotd-right p{
+    font-size: 16px;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+.dotd-flash-time{
+    display: flex;
+    padding: 10px 0px;
+}
+
+.dotd-box{
+    background-color: #ffff;
+    margin-right: 10px;
+    height: auto;
+    min-width: 60px;
+    padding: 10px;
+    text-align: center;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+
+.dotd-right .btn-blue{
+    background-color: #0a5d5d;
+    padding: 20px 30px;
+    color: #fff;
+    display: inline-block;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+.dotd-right .btn-blue:hover{
+    background-color: transparent;
+    color: #000;
+    border: 1px solid #000;
+
+}
 
 @media screen and (max-width: 1000px) {
     #new-arrivals .content-container {
@@ -1007,6 +1087,28 @@ header .container {
     .news-right{
         width: 100%;
         padding: 30px;
+    }
+
+    .dotd-container{
+        flex-direction: column;
+        padding: 50px;
+        width: 90%;
+        background-color: #f5f5f5;
+    }
+    
+    .dotd-left{
+        width: 100%;
+    }
+    .dotd-left img{
+        width: 100%;
+        height: auto;
+    }
+
+    .dotd-right{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 @media screen and (max-width: 768px) {
