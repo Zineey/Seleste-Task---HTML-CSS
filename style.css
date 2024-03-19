@@ -888,10 +888,16 @@ header .container {
     align-items: center;
     justify-content: center;
     width: 100%;
+    overflow: hidden;
+}
+
+.news-container:hover img{
+    transform: scale(1.1);
 }
 
 .news-left{
     width: 40%;
+    overflow: hidden;
 }
 
 .news-right{
@@ -902,6 +908,7 @@ header .container {
 .news-left img{
     width: 100%;
     height: auto;
+    transition: transform 0.5s;
 }
 .news-right .date{
     font-size: 15px;
@@ -957,7 +964,6 @@ header .container {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-bottom: 5%;
 }
 .dotd-container{
     display: flex;
@@ -1031,6 +1037,169 @@ header .container {
     color: #000;
     border: 1px solid #000;
 
+}
+
+#gallery{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 5%;
+}
+
+.gallery-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 50px;
+    width: 90%;
+}
+
+.gallery-card{
+    width: 15%;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    justify-content: center;
+}
+.gallery-card img{
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.gallery-card:hover img {
+    transform: scale(1.1);
+}
+
+#footer{
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.footer-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    width: 90%;
+}
+
+.footer-col img{
+    width: 70%;
+    height: auto;
+}
+
+.footer-col{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer-heading{
+    font-size: 25px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #000;
+}
+
+.icon-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.icon-link svg{
+    color: #888;
+}
+
+.social-links{
+    text-decoration: none;
+    color: #000;
+    margin-right: 10px;
+}
+
+.social-links:hover{
+    color: #0a5d5d;
+}
+.footer-links {
+    color: #888;
+    text-decoration: none;
+    transition: color 0.3s; 
+}
+.footer-col ul{
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col li{
+    margin-bottom: 10px;
+}
+
+.footer-links:hover {
+    color: #0a5d5d; 
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+input[type="email"] {
+    height: 40px;
+    padding: 10px 30px;
+    width: 100%;
+    border: 2px solid #000;
+    box-sizing: border-box;
+    border-radius: 5px 0 0 5px;
+}
+
+.news-submit {
+    height: 40px;
+    padding: 10px 20px;
+    width: 30%;
+    border: none;
+    background-color: #0a5d5d;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+}
+
+.news-submit:hover {
+    background-color: transparent;
+    color: #000;
+    border: 2px solid #000;
+}
+
+hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+  } 
+.copyright{
+    width: 100%;
+    font-size: 15px;
+    color: #888;
+    text-align: left;
+    margin-top: 20px;
+}
+.copyright span{
+    padding: 70px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -1110,7 +1279,36 @@ header .container {
         flex-direction: column;
         align-items: center;
     }
+    .gallery-container{
+        width: 100%;
+        gap: 10px;
+    }
+    .gallery-card{
+        width: 30%;
+        height: max-content;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        justify-content: center;
+    }
+
+    .footer-container {
+        width: 100%;
+        padding: 20px;
+        gap: 20px;
+    }
+    
+    .footer-col {
+        width: 100%;
+        align-items: flex-start;
+    }
+    
+    .footer-col img {
+        width: 60%;
+    }
 }
+
+
 @media screen and (max-width: 768px) {
     .navbar-nav {
         display: none;
