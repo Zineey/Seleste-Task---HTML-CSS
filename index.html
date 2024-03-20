@@ -1827,6 +1827,18 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        const navbarToggler = document.getElementById('navbar-toggler');
+        const navbarNav = document.getElementById('navbar-nav');
+
+        navbarToggler.addEventListener('click', function() {
+            navbarNav.classList.toggle('show');
+        });
+    });
+    </script>
 </body>
+
 </html>
 
