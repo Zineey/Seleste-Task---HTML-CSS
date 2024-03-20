@@ -781,7 +781,7 @@ header .container {
 
 .flash-card {
     /* display: flex; */
-    width: 400px;
+    width: 25%;
     margin: 5px;
 }
 
@@ -1280,7 +1280,7 @@ hr {
         align-items: center;
     }
     .gallery-container{
-        width: 100%;
+        width: 80%;
         gap: 10px;
     }
     .gallery-card{
@@ -1306,6 +1306,54 @@ hr {
     .footer-col img {
         width: 60%;
     }
+    .middle-product-card {
+        position: relative;
+        width: 250px;
+        height: 600px; 
+        margin: 5px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flash-card {
+        width: 350px;
+        margin: 5px;
+    }
+    .flash-time {
+        position: absolute;
+        bottom: 10%;
+        width: 200px;
+        display: flex;
+        flex-direction: row;
+        left: 6%;
+    }
+    .flash-time .box{
+        background-color: #ffff;
+        margin-right: 10px;
+        height: auto;
+        min-width: 40px;
+        padding: 10px;
+        text-align: center;
+        color: #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #flash-deals .flickity-prev-next-button.previous {
+        top: -6%;
+        left: 30%
+    }
+    
+    #flash-deals .flickity-prev-next-button.next {
+        top: -6%;
+        right: 30%;
+    }
+    .copyright span{
+        padding: 0;
+    }
 }
 
 
@@ -1326,7 +1374,6 @@ hr {
         display: block;
         padding: 10px;
     }
-
 
     .nav-item {
         margin-right: 0;
@@ -1362,41 +1409,6 @@ hr {
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-    .flash-card {
-        width: 350px;
-        margin: 5px;
-    }
-    .flash-time {
-        position: absolute;
-        bottom: 10%;
-        width: 200px;
-        display: flex;
-        flex-direction: row;
-        left: 6%;
-    }
-    .flash-time .box{
-        background-color: #ffff;
-        margin-right: 10px;
-        height: auto;
-        min-width: 40px;
-        padding: 10px;
-        text-align: center;
-        color: #000;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
-
-    #flash-deals .flickity-prev-next-button.previous {
-        top: -6%;
-        left: 30%
-    }
-    
-    #flash-deals .flickity-prev-next-button.next {
-        top: -6%;
-        right: 30%;
     }
 
     .news-container{
