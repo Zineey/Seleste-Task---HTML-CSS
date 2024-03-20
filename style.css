@@ -1155,7 +1155,7 @@ header .container {
     align-items: center;
 }
 
-input[type="email"] {
+#footer input[type="email"] {
     height: 40px;
     padding: 10px 30px;
     width: 100%;
@@ -1200,6 +1200,376 @@ hr {
 }
 .copyright span{
     padding: 70px;
+}
+#banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+    width: 100%;
+    /* background: red; */
+}
+
+.banner-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+}
+.banner-links a{
+    text-decoration: none;
+    color: #000;
+}
+
+.home-icon{
+    display: flex;
+    align-items: center;
+}
+
+
+#banner-img{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#banner-img img{
+    width: 100%;
+    height: auto;
+}
+.banner-img-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+    width: 60%;
+}
+#banner-paragraph{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-container{
+    width: 60%;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+#testimony {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimony-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 50px;
+    width: 60%;
+    background-color: #dfdfdf;
+    gap: 20px;
+    border-radius: 20px;
+}   
+
+.img-left {
+    width: 30%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-left img {
+    max-width: 100%;
+    height: auto;
+}
+
+.testimony-content {
+    display: flex;
+    /* align-items: center; */
+    flex-direction: row;
+    gap: 10px;
+}
+
+.quote-img {
+    width: auto;
+    height: auto;
+}
+.quote-img img{
+    width: 100%;
+    height: auto;
+
+}
+
+.quote-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.quote-content p {
+    font-size: 20px;
+    color: #000;
+}
+
+.quote-content span {
+    font-size: 14px;
+    color: #000;
+}
+
+#about-services{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#about-services .services-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 60%;
+    padding: 20px;
+}
+
+.services-content{
+    width: 50%;
+}
+
+.services-img{
+    width: 50%;
+}
+
+.services-img img{
+    width: 100%;
+    height: auto;
+
+}
+.services-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.services-content h1{
+    font-size: 40px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #000;
+}
+
+.services-content span{
+    font-size: 16px;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+.services-container2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 60%;
+    padding: 20px;
+}
+
+.services-content2{
+    width: 50%;
+}
+
+.services-img2{
+    width: 50%;
+}
+
+.services-img2 img{
+    width: 100%;
+    height: auto;
+
+}
+.services-content2{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.services-content2 h1{
+    font-size: 40px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #000;
+}
+
+.services-content2 span{
+    font-size: 16px;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+hr{
+    width: 60%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #e2e2e2;
+
+}
+
+#map{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.map-container{
+    width: 60%;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    height: 100%;
+}
+.map-container iframe{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+#contact-form{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-container{
+    width: 60%;
+    padding: 50px;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+.contact-top p{
+    font-size: 15px;
+    color: #000;
+}
+.contact-bottom{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.form-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 70%;
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form input[type="text"], input[type="email"], input[type="number"], textarea{
+    padding: 10px 20px;
+    width: 100%;
+    border: 1px solid #cccccc;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.form-submit{
+    background-color: #0a5d5d;
+    padding: 20px 30px;
+    color: #fff;
+    display: inline-block;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    text-align: center;
+    border: 0;
+    width: 30%;
+    font-size: 15px;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.form-group input[type="text"], input[type="email"]{
+    width: 49%;
+}
+
+.contact-info{
+    padding: 20px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.info-item{
+    display: flex;
+    flex-direction: row;
+}
+.info-list p{
+    font-size: 15px;
+    color: #000;
+    margin: 0;
+}
+.label {
+    font-size: 15px;
+    font-weight: bold;
+    margin-right: 10px; 
+}
+.info-list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.info-icons{
+    display: flex;
+    flex-direction: row;
+}
+
+.info-icons .social-links{
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    background-color: #0a5d5d;
+    padding: 8px;
+    border-radius: 5px;
+}
+.info-icons .social-links:hover{
+    color: #fff;
+    background-color: #000;
 }
 
 @media screen and (max-width: 1000px) {
@@ -1354,7 +1724,65 @@ hr {
     .copyright span{
         padding: 0;
     }
+    .img-left{
+        width: 70%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center
+    }
+    .quote-img{
+        width: auto;
+        height: auto;
+    }
+    .quote-img img{
+        width: 50%;
+        height: auto;
+    }
+    .testimony-content p{
+        font-size: 15px;
+        color: #000;
+    } 
+    .services-container{
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+    .services-img{
+        width: 100%;
+    }
+    .services-content{
+        width: 100%;
+    }
+    .services-container2{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .services-img2{
+        width: 100%;
+    }
+    .services-content2{
+        width: 100%;
+    }
+    .map-container{
+        width: 100%;
+        padding: 20px;
+        gap: 20px;
+    }
+    .contact-bottom{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .form-container{
+        width: 100%;
+    }
+    .contact-info{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
 }
+
 
 
 @media screen and (max-width: 768px) {
@@ -1424,4 +1852,23 @@ hr {
         width: 100%;
         padding: 30px;
     }
+    .form-group{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .contact-container{
+        width: 100%;
+        padding: 50px;
+        gap: 20px;
+    }
+    .form-container{
+        width: 100%;
+    }
+    .form-group input[type="text"], input[type="email"]{
+        width: 100%;
+    }
+    .form-submit{
+        width: 50%;
+    }
+    
 }
